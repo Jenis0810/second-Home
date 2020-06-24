@@ -1,0 +1,59 @@
+*{
+
+	font-family: 'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+} 
+body {
+   background: linear-gradient(to right, #0F2027, #2C5364);
+    font-family: 'Montserrat', sans-serif;
+}
+form {
+    background-color: white;
+ 	border-radius: 16px;
+ 	margin: auto;
+}
+.form-control{
+	border: none;
+	border-bottom: 1px solid #000;
+	border-radius: 0px;
+	display: inline;
+}
+.form-control:focus{
+    border-bottom: 2px solid rebeccapurple;
+    box-shadow: none;
+
+}
+.fullname>input{
+	display: flex;
+	justify-content: center;
+	width: 30%;
+	display: inline-block
+}
+.custom-select-sm{
+margin:10px 20px;
+    padding: 6px 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.submit-btn{
+    margin:40px auto;
+    display:block;
+    outline: none;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    background-color: purple;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.5s ease all;
+}
+.submit-btn:hover{
+    transform: scale(1.1,1.1);
+}

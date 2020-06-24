@@ -1,0 +1,35 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.parallax-window {
+    min-height: 70vh;
+   
+
+}
+.parallax-window-main{
+	height: 100vh;
+    background: transparent;
+    background-size:cover;
+    width: 100%;
+     background: linear-gradient(#000,transparent);
+}
+.parallax-window>h1{
+	text-align:center;
+	color: floralwhite;
+	font-weight: 900;
+	font-size: 60px;
+	padding-top: 30px;
+	
+}
+.parallex1{
+	 position: relative;
+}
+.parallax-window-room{
+	min-height: 70vh;
+	 background: transparent;
+    background-size:cover;
+    width: 100%;
+     background: linear-gradient(#000,transparent);
+   

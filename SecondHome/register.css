@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+body {
+   background: linear-gradient(to right, #0F2027, #2C5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+   
+}
+
+form {
+    background-color: white;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    height: 100%;
+    text-align: left;
+    margin: 10%;
+    margin-top: 0px;
+    border-radius: 20px;
+    padding-bottom: 1700px;
+    padding-top:-100px;
+}
+.padding-left{
+padding-left: 50px;
+}
+.container {
+    background: -webkit-linear-gradient(to right, #0F2027, #2C5364);
+    background: linear-gradient(to right, #0F2027, #2C5364);
+    border-radius: 20px;
+  height: 100%;
+    width: 100%;
+}
+
+.personal {
+    font-weight: bold;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    padding-top: 60px;
+    font-size: 26px;
+}
+
+h1 {
+    text-align: center;
+}
+.Education{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 40px 0px 40px 80px;
+}
+
+.select-box{
+margin:10px 20px;
+    padding: 6px 20px;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.input-image{
+    outline: none;
+    padding-bottom: 10px;
+    border: none;
+}
+input {
+    border-style: none;
+    border-bottom: 1px solid black;
+      margin-top: 20px;
+      font-size: 20px;
+}
+input:focus{
+    border-bottom: 1px solid #000;
+    outline: none;
+
+}
+.submit-btn{
+    margin:40px auto;
+    display:block;
+    outline: none;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    background-color: purple;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.5s ease all;
+}
+.submit-btn:hover{
+    transform: scale(1.1,1.1);
+}
+@media (min-width: 0px) and (max-width: 575px){
+
+form {
+    margin: 0%;
+    margin-left: 6px;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding-bottom: 1700px;
+    padding-top:-100px;
+}
+.padding-left{
+padding-left: 20px;
+}
+
+}

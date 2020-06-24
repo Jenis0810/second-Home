@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register-style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h3 class="text-white text-center text-capitalize font-weight-bold pt-4">Register here</h1>
+        <form action="student_info.php" method="POST" class="py-4 my-4">
+          
+           
+            <div class="container-fluid">
+                 <h3 class="font-weight-bold ml-5 my-4">Personal Details</h3>
+            <div class="container">
+                
+           
+                <p class="my-3 font-weight-bold">Full name:<br>
+                    <div class="fullname">
+                        
+                   
+                <input type="text" placeholder="First Name" name="fname" class="form-control" required />
+                <input type="text" placeholder="Middle Name" name="mname" class="form-control"/>
+                <input type="text" placeholder="Last Name" name="lname" class="form-control" required />
+            </p>
+            <p class="font-weight-bold">Mobile Number:<br>
+                <input type="text" placeholder="Mobile"  pattern="[6-9]{1}[0-9]{9}" name="mobile" class="form-control" required />
+            </p>
+            <p class="font-weight-bold">Address: <br>
+                <input type="text" placeholder="Line1" name="line1" class="form-control" required/><br>
+                <br>
+                <input type="text" placeholder="Line2" name="line2" class="form-control" />
+            </p>
+            <p class="font-weight-bold"> City:<br>
+                <input type="text" placeholder="City" name="city" name="City" class="form-control" /><br>
+            </p>
+
+            <p class="font-weight-bold"> State:<br>
+                <input type="text" placeholder="State" name="state" name="State" class="form-control" />
+            </p>
+
+            <p class="font-weight-bold">Date Of Birth <br>
+                <input type="date" placeholder="DOB" name="DOB" class="form-control" required />
+            </p>
+            <p class="font-weight-bold">
+                Gender:
+                <select name="gender" placeholder="Gender" class="form-control select-box" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+            </p>
+            
+            <p class="font-weight-bold">Parent's name:<br>
+                <input type="text" name="pname" placeholder="Parent's Name" class="form-control" required />
+            </p>
+            
+            <p class="font-weight-bold">Parent's Number:<br> <input  name="pmobile" pattern="[6-9]{1}[0-9]{9}" type="text" placeholder="Parent's Number" class="form-control" required></p>
+            <p class="font-weight-bold">Parent's E-mail:<br><input type="email" name="pemail" placeholder="Parent's E-mail" class="form-control"></p>
+            
+                
+            </div>
+         </div>
+                
+
+            
+                 <h3 class="font-weight-bold ml-5 my-4">Educational Details</h3>
+            <div class="container">
+            <p class="font-weight-bold">
+                Current Educational Institute(College/School):<br>
+                <input type="text" placeholder="Institute name" name="clg" class="form-control" required><br>
+            </p>
+            <p class="font-weight-bold"> Branch:<br>
+                <input type="text" placeholder="Branch" name="branch" class="form-control" name="Branch" />
+            </p>
+            <p class="font-weight-bold"> Year:
+                <select placeholder="Year" name="year" class="custom-select-sm ml-4" required>
+                    <option value="FY">FY</option>
+                    <option value="SY">SY</option>
+                    <option value="TY">TY</option>
+                    <option value="LY">LY</option>
+                  </select>
+            </p>
+         
+        </div>
+      
+           <!--  <button class="submit-btn">Submit</button> -->
+           <input type="submit" class="submit-btn"  name="submit" />
+
+
+        </form>
+    </div>
+</body>
+
+</html>

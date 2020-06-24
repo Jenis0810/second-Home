@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+   
+    <div class="container" id="container">
+        <h1 style="color: white;"> Register here</h1>
+        <form action="student_info.php" method="POST">
+            <p class="personal">Personal Details</p>
+            <div class="padding-left">
+            <p>Full name:<br>
+                <input type="text" placeholder="First Name" name="fname" class="form-control" required />
+                <input type="text" placeholder="Middle Name" name="mname" class="form-control" />
+                <input type="text" placeholder="LastName" name="lname" class="form-control" required />
+            </p>
+            <p>Mobile Number:<br>
+                <input type="text" placeholder="Mobile Number" name="mobile"   pattern="[6-9]{1}[0-9]{9}" required />
+            </p>
+            <p>Address: <br>
+                <input type="text" placeholder="Line1" name="line1" class="form-control" required /><br>
+                <br>
+                <input type="text" placeholder="Line2" name="line2" class="form-control" required/>
+            </p>
+            <p> City:<br>
+                <input type="text" placeholder="City" name="city" class="form-control" required /><br>
+            </p>
+
+            <p> State:<br>
+                <input type="text" placeholder="State" name="state" class="form-control" required/>
+            </p>
+
+            <p>Date Of Birth
+                <input type="date" placeholder="DOB" name="DOB" class="form-control" min="1990-01-01" max="2010-12-31" required />
+            </p>
+            <p>
+                Gender:<br>
+                <select name="gender" placeholder="Gender" class="form-control" required>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">other</option>
+                </select>
+            </p>
+            <p>Parent's name:<br>
+                <input type="text" placeholder="PName" name="pname" class="form-control" required />
+            </p>
+            
+            <p>Phone Number:<br> <input type="text"  name="pmobile"  pattern="[6-9]{1}[0-9]{9}" placeholder="PNumber" class="form-control" required>
+            </p>
+            <p>E-mail:<br><input type="email" name="pemail" placeholder="E-mail" class="form-control" required></p>
+            <hr>
+            </div>
+            <p class="Education">Educational Details</p>
+            <div class="padding-left">
+            <p>
+                Current Educational Institute(College/School):<br>
+                <input type="text" placeholder="Institute name" name="clg" class="form-control" required><br>
+            </p>
+            <p> Branch:<br>
+                <input type="text" placeholder="Branch" name="branch" class="form-control" required />
+            </p>
+            <p> Year:
+                <select name="year" placeholder="Year" class="form-control" required>
+                    <option value="FY">FY</option>
+                    <option value="SY">SY</option>
+                    <option value="TY">TY</option>
+                    <option value="LY">LY</option>
+                </select>
+            </p>
+          </div>
+            <input type="submit" class="submit-btn"  name="submit" />
+        </form>
+    
+</body>
+
+</html>

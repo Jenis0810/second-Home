@@ -1,0 +1,31 @@
+@media (min-width: 0px) and (max-width: 575px) {
+    .responsive{
+        width: 90%;
+    }
+    body > div > form > input{
+        width: 90%;
+    }
+    body > div > button{
+       display:block;
+       margin: 0 auto;
+       color: #fff;
+    }
+   
+    body > div > p{
+        text-align: center;
+    }
+    form {
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 0px;
+        height: 100%;
+        text-align: center;
+    }
+  
+ }
+ body > div > button>a{
+    color: #fff;
+}

@@ -1,0 +1,126 @@
+ *{
+
+	font-family: 'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+} 
+ul li.active a{
+	background-color: deepskyblue;
+}
+.sidebar {
+height: 100%;
+width: 60px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+ background: linear-gradient(to right, #0F2027, #2C5364);
+transition: 0.5s;
+padding-top: 60px;
+white-space: nowrap;
+overflow-x: hidden;
+}
+#nav-sidebar > ul > li > a > i {
+	margin-left: 12px;
+	margin-right: 12px;
+	width: 30px;
+}
+.sidebar a {
+  padding : 8px 0px;
+  margin: 8px 8px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 25px;
+  color: aliceblue;
+  display: block;
+  font-size: 18px;
+
+}
+.sidebar-brand {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin-left: 10px;
+  text-align: center;
+  padding: 18px 0;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+background: #36D1DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+#navbar-wrapper{
+	 transition: margin-left 0.5s;
+ 
+  margin-left: 60px;
+}
+#content-wrapper {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  margin-left: 60px;
+ padding-top: 0px;
+}
+#sidebar-btn{
+	display: none;
+	transition: 0.5s ease all;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+
+.sidebar {
+height: 100%;
+width: 60px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+ background: linear-gradient(to right, #0F2027, #2C5364);
+transition: 0.5s;
+padding-top: 60px;
+white-space: nowrap;
+overflow-x: hidden;
+}
+#content-wrapper{
+   margin-left: 60px;
+}
+#navbar-wrapper{
+	 margin-left: 60px;
+}
+#sidebar-btn	{
+	display: inline;
+}
+}
+
+
+.profile-block{
+	border-right: 2px solid #989898;
+
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .profile-block{
+	border-right: none;
+	
+}
+}
+.user-msg{
+  border-radius: 16px;
+  width: 60%;
+  height: auto;
+  padding: 10px 24px;
+  background-color: lightgreen;
+
+}
